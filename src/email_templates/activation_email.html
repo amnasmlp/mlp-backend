@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activate Your My Little River Card Account</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      color: #ff7e5f;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff7e5f;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #e06653;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Little River Card!</h1>
+    <p>Hello {{ username }},</p>
+    <p>Thank you for joining our community of card enthusiasts! Your account has been created successfully.</p>
+    <p>To get started, please activate your account by clicking the button below:</p>
+    <a href="{{ activationLink }}" class="button">Activate My Account</a>
+    <p>If you did not sign up for an account, please disregard this email.</p>
+    <div class="footer">
+      <p>&copy; 2024 My Little River Card. All rights reserved.</p>
+    </div>
+  </div>
+</body>
+</html>
