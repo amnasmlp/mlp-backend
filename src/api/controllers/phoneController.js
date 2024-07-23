@@ -4,7 +4,6 @@ const addPhoneNumber = async (req, res) => {
   try {
     const userId = req.user.id;
     const { phoneNumber } = req.body;
-    console.log(phoneNumber)
     await phoneService.addPhoneNumber(userId, phoneNumber);
 
     res.status(200).json({ message: 'Verification code sent' });
